@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>Enferno.Public.Web.N2</id>
+    <version>1.5.0.4</version>
+    <title>Enferno.Public.Web.N2</title>
+    <authors>Enferno AB</authors>
+    <owners>Enferno AB</owners>
+    <projectUrl>https://enfernopublic.codeplex.com/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Enferno Web N2 helpers.</description>
+    <releaseNotes>
+    Updated dependencies and added support for getting CurrentProduct by virtual method. Allowing subclasses to override and supply the product by itself.
+    </releaseNotes>
+    <copyright>Copyright 2014</copyright>
+    <tags>Enferno Public Web N2</tags>
+    <dependencies>
+      <dependency id="Antlr" version="3.4.1.9004" />
+      <dependency id="AutoMapper" version="3.2.1" />
+      <dependency id="Enferno.Public" version="1.0.17" />
+      <dependency id="Enferno.Public.Web" version="1.6.0.7" />
+      <dependency id="Enferno.StormApiClient" version="1.8.6" />
+      <dependency id="Iesi.Collections" version="3.2.0.4000" />
+      <dependency id="Newtonsoft.Json" version="6.0.1" />
+      <dependency id="N2CMS.Library" version="2.6.1.2" />
+      <dependency id="NHibernate" version="3.3.3.4001" />
+      <dependency id="WebGrease" version="1.5.2" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="Enferno.Public.Web.N2\bin\Debug\Enferno.Public.Web.N2.dll" target="lib/net45" />
+    <file src="Enferno.Public.Web.N2\bin\Debug\Enferno.Public.Web.N2.pdb" target="lib/net45" />
+    <file src="Enferno.Public.Web.N2\**\*.cs" target="src" />
+  </files>
+</package>
