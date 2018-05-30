@@ -3,7 +3,7 @@ using System;
 using Enferno.Public.InversionOfControl;
 using Enferno.Public.Web.Repositories;
 using Enferno.StormApiClient.Products;
-using Microsoft.Practices.Unity;
+using Unity;
 using N2;
 using N2.Definitions;
 using N2.Details;

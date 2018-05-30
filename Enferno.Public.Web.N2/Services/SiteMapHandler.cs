@@ -11,8 +11,8 @@ using System.Xml;
 using Enferno.Public.InversionOfControl;
 using Enferno.Public.Web.N2.Items.Pages;
 using Enferno.Public.Web.Repositories;
-using Microsoft.Practices.ObjectBuilder2;
 using N2;
+using Unity.Interception.Utilities;
 
 namespace Enferno.Public.Web.N2.Services
 {

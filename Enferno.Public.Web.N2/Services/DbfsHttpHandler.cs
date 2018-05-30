@@ -11,7 +11,7 @@ using N2.Engine;
 using N2.Plugin;
 using N2.Web;
 
-using Microsoft.Practices.Unity;
+using Unity;
 
 namespace Enferno.Public.Web.N2.Services
 {
