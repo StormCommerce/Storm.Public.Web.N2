@@ -12,7 +12,6 @@ using Enferno.Public.InversionOfControl;
 using Enferno.Public.Web.N2.Items.Pages;
 using Enferno.Public.Web.Repositories;
 using N2;
-using Unity.Interception.Utilities;
 
 namespace Enferno.Public.Web.N2.Services
 {
@@ -125,7 +124,7 @@ namespace Enferno.Public.Web.N2.Services
                 {
                     if (!CanIndex(item)) continue;
                     var categories = repository.Products.ListCategoryItems(cultureCode);
-                    var seed = categories.Select(c => c.CategoryId.ToString(CultureInfo.InvariantCulture)).JoinStrings(",");
+                    var seed = string.Join(",", categories.Select(c => c.CategoryId.ToString(CultureInfo.InvariantCulture)));
                     var products = repository.Products.ListProducts(false, categorySeed: seed);
                     list.AddRange(products.Items.Select(product => new NavigatableUrl(domain, siteRules.FormatProductPageUrl(item.Url, product))));
                 }
